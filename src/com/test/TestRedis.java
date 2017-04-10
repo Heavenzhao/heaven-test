@@ -58,6 +58,7 @@ public class TestRedis {
             map.put("age", "22");
             map.put("qq", "123456");
             jedis.hmset("employee",map);
+            System.out.println("fff");
             
             //取出employee中的name、age、qq 执行结果:[name age qq]-->注意结果是一个泛型的List  
             //第一个参数是存入redis中map对象的key，后面跟的是放入map中的对象的key，后面的key可以跟多个，是可变参数  
